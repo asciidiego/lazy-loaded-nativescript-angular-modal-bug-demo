@@ -24,10 +24,6 @@ export class SubscriptionComponent extends BaseComponent {
     const options: ModalDialogOptions = {
       viewContainerRef: this._vcRef,
       context: {},
-      animated: true,
-      ios: {
-        presentationStyle: UIModalPresentationStyle.PageSheet,
-      },
     };
 
     this._modalService
