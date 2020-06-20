@@ -23,10 +23,32 @@
     "update": "nx migrate latest",
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
-    "help": "nx help"
+    "help": "nx help",
+    "clean": "npx rimraf -- hooks node_modules package-lock.json && npm i",
+    "start.nativescript.pasta.ios": "cd apps/nativescript-pasta && tns debug ios --env.aot --no-hmr --emulator",
+    "start.nativescript.pasta.android": "cd apps/nativescript-pasta && tns debug android --env.aot --no-hmr --emulator",
+    "clean.nativescript.pasta": "cd apps/nativescript-pasta && npx rimraf -- hooks node_modules platforms package-lock.json && npm i && npx rimraf -- package-lock.json"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@nativescript/core": "~6.5.0",
+    "nativescript-theme-core": "^1.0.4",
+    "@angular/animations": "~9.1.0",
+    "@angular/common": "~9.1.0",
+    "@angular/compiler": "~9.1.0",
+    "@angular/core": "~9.1.0",
+    "@angular/forms": "~9.1.0",
+    "@angular/platform-browser": "~9.1.0",
+    "@angular/platform-browser-dynamic": "~9.1.0",
+    "@angular/router": "~9.1.0",
+    "@ngx-translate/core": "~12.1.0",
+    "rxjs": "^6.5.0",
+    "tslib": "~1.11.0",
+    "zone.js": "~0.10.2",
+    "@nativescript/angular": "~9.0.0",
+    "nativescript-intl": "~3.0.0",
+    "nativescript-ngx-fonticon": "~6.0.3"
+  },
   "devDependencies": {
     "@nrwl/workspace": "9.4.5",
     "@nstudio/xplat": "^9.0.4",
@@ -36,6 +58,20 @@
     "prettier": "2.0.4",
     "ts-node": "~7.0.0",
     "tslint": "~6.0.0",
-    "typescript": "~3.8.3"
+    "typescript": "~3.8.3",
+    "@nstudio/nativescript-angular": "9.0.4",
+    "@nrwl/angular": "~9.2.2",
+    "@nstudio/nativescript": "9.0.4",
+    "@nstudio/angular": "9.0.4",
+    "node-sass": "^4.12.0",
+    "terser-webpack-plugin": "~2.2.0",
+    "tns-platform-declarations": "~6.5.0",
+    "@angular/compiler-cli": "~9.1.0",
+    "@angular/language-service": "~9.1.0",
+    "codelyzer": "~5.1.0"
+  },
+  "xplat": {
+    "prefix": "time",
+    "framework": "angular"
   }
 }
