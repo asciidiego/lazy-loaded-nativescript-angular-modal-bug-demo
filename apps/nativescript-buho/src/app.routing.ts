@@ -11,17 +11,17 @@ import { SharedModule } from './features/shared/shared.module';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
+    redirectTo: '/home/dashboard',
+    pathMatch: 'full',
   },
   {
     path: 'home',
-    loadChildren: () => 
-      import('./features/home/home.module').then(m => m.HomeModule)
-  }
+    loadChildren: () =>
+      import('./features/home/home.module').then((m) => m.HomeModule),
+  },
 ];
 
 @NgModule({
-  imports: [SharedModule, NativeScriptRouterModule.forRoot(routes)]
+  imports: [SharedModule, NativeScriptRouterModule.forRoot(routes)],
 })
 export class AppRoutingModule {}
