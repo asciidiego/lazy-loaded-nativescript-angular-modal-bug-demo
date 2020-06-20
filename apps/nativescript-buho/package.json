@@ -3,7 +3,10 @@
   "license": "SEE LICENSE IN <your-license-filename>",
   "version": "0.0.0",
   "nativescript": {
-    "id": "org.nativescript.buho"
+    "id": "org.nativescript.buho",
+    "tns-ios": {
+      "version": "6.5.1"
+    }
   },
   "scripts": {
     "reset": "npx rimraf -- hooks node_modules platforms && npm run js.clean",
