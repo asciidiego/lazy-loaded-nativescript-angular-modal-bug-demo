@@ -31,8 +31,6 @@
   },
   "private": true,
   "dependencies": {
-    "@nativescript/core": "~6.5.0",
-    "nativescript-theme-core": "^1.0.4",
     "@angular/animations": "~9.1.0",
     "@angular/common": "~9.1.0",
     "@angular/compiler": "~9.1.0",
@@ -41,13 +39,15 @@
     "@angular/platform-browser": "~9.1.0",
     "@angular/platform-browser-dynamic": "~9.1.0",
     "@angular/router": "~9.1.0",
+    "@nativescript/angular": "~9.0.0",
+    "@nativescript/core": "^6.5.8",
     "@ngx-translate/core": "~12.1.0",
+    "nativescript-intl": "~3.0.0",
+    "nativescript-ngx-fonticon": "~6.0.3",
+    "nativescript-theme-core": "^1.0.4",
     "rxjs": "^6.5.0",
     "tslib": "~1.11.0",
-    "zone.js": "~0.10.2",
-    "@nativescript/angular": "~9.0.0",
-    "nativescript-intl": "~3.0.0",
-    "nativescript-ngx-fonticon": "~6.0.3"
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@nrwl/workspace": "9.4.5",
