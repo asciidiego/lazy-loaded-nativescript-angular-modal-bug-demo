@@ -9,7 +9,12 @@ import { BaseComponent } from '@time/core';
   styleUrls: ['./subscription.component.scss'],
 })
 export class SubscriptionComponent extends BaseComponent {
+  title = '';
   constructor() {
     super();
+  }
+
+  onSetSubscription(): void {
+    console.log(`Subscription saved! [${this.title}]`);
   }
 }
