@@ -13,6 +13,8 @@ export class ModalViewActionBarComponent extends BaseComponent {
   }
 
   ngOnInit() {
-    console.log('xd');
+    console.log(
+      'ModalViewActionBarComponent does init, but it crashes on iOS.'
+    );
   }
 }
